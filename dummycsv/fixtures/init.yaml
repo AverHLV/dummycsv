@@ -1,0 +1,37 @@
+# column types
+
+- model: datasets.ColumnType
+  pk: 1
+  fields:
+      _sid: name
+
+- model: datasets.ColumnType
+  pk: 2
+  fields:
+      _sid: job
+
+- model: datasets.ColumnType
+  pk: 3
+  fields:
+      _sid: text
+
+- model: datasets.ColumnType
+  pk: 4
+  fields:
+      _sid: integer
+
+- model: datasets.ColumnType
+  pk: 5
+  fields:
+      _sid: date
+
+# users
+
+- model: auth.User
+  pk: 1
+  fields:
+      username: admin
+      password: 'pbkdf2_sha256$216000$XiMVUojsqDp9$8ugoueeup2DlCNFW665khJ93ZeYvU6Hd67YKOoS7u6I=' # admin
+      email: admin@example.com
+      is_staff: True
+      is_superuser: True
